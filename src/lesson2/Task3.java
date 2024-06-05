@@ -5,7 +5,7 @@ package lesson2;
 public class Task3 {
 
     public static void main(String[] args) {
-        int number = 12345678;
+        int number = 123456789;
         System.out.println("number = " + number);
         int number2 = number / 10;
         int check = number % 10;
@@ -20,6 +20,8 @@ public class Task3 {
                 number2 /= 10;
             }
             number /= 10;
+            number2 = number / 10;
+            check = number % 10;
         }
         System.out.println(checkunique);
     }
