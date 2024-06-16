@@ -33,7 +33,7 @@ public class Task4 {
                 tmp /= 10;
             }
             for (int j = 0; j < newArray.length - 1; j++) {
-                if (newArray[j] < newArray[j + 1]) {
+                if (newArray[j] + 1 == newArray[j + 1]) {
                     checkLength++;
                 }
             }
