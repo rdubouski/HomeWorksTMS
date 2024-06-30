@@ -1,5 +1,9 @@
 package lesson9.task1;
 
+//Напишите класс BaseConverter для конвертации из градусов по Цельсию в
+//Кельвины, Фаренгейты, и так далее. У класса должен быть метод convert, который
+//и делает конвертацию
+
 public class Task1 {
 
     public static void main(String[] args) {
