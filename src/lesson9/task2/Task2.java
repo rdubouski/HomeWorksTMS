@@ -9,4 +9,16 @@ package lesson9.task2;
 //то метод должен вернуть false.
 
 public class Task2 {
+
+    public static void main(String[] args) {
+        Ball ball = new Ball(2);
+        Cylinder cylinder = new Cylinder(2, 2);
+        Pyramid pyramid =  new Pyramid(5, 5);
+        Box box = new Box(50);
+
+        System.out.println(box.add(ball));
+        System.out.println(box.add(cylinder));
+        System.out.println(box.add(pyramid));
+        System.out.println(box.add(pyramid));
+    }
 }
