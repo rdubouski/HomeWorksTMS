@@ -1,6 +1,6 @@
 package lesson9.task2;
 
-public class Shape {
+public abstract class Shape {
 
     private double volume;
 
