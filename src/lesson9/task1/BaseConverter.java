@@ -1,6 +1,9 @@
 package lesson9.task1;
 
-public interface BaseConverter {
+public class BaseConverter {
 
-    double convert(double degree);
+    public double convert(double degree, Converter converter) {
+        return converter.convert(degree);
+    }
+
 }

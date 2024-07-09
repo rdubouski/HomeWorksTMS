@@ -1,6 +1,6 @@
 package lesson9.task1;
 
-public class Kelvin implements BaseConverter{
+public class Kelvin implements Converter{
 
     @Override
     public double convert(double degree) {

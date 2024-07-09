@@ -1,6 +1,6 @@
 package lesson9.task1;
 
-public class Fahrenheit implements BaseConverter{
+public class Fahrenheit implements Converter{
 
     @Override
     public double convert(double degree) {
