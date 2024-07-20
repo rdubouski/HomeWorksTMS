@@ -21,20 +21,23 @@ public class Task4 {
         for (String tString : strings) {
             String[] words = tString.split(" ");
             for (String tWords : words) {
-                isUniq = true;
                 char[] cWords = tWords.toCharArray();
-                for (int i = 0; i < cWords.length - 1; i++) {
-                    for (int j = i + 1; j < cWords.length; j++) {
-                        if (cWords[i] == cWords[j]) {
-                            isUniq = false;
-                            break;
-                        }
-                    }
-                }
+                isUniq = checkUniq(cWords);
                 if (isUniq) {
                     System.out.println("Uniq word = " + tWords);
                 }
             }
         }
+    }
+
+    private static boolean checkUniq(char[] cWords) {
+        for (int i = 0; i < cWords.length - 1; i++) {
+            for (int j = i + 1; j < cWords.length; j++) {
+                if (cWords[i] == cWords[j]) {
+                    return false;
+                }
+            }
+        }
+        return true;
     }
 }
