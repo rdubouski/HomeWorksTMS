@@ -30,7 +30,7 @@ public class Task2 {
         selection.start();
     }
 
-    public synchronized static void sortBubble(List<Integer> list) {
+    public static void sortBubble(List<Integer> list) {
         for (int i = 0; i < list.size() - 1; i++) {
             for (int j = i + 1; j < list.size(); j++) {
                 if (list.get(i).compareTo(list.get(j)) > 0) {
@@ -43,7 +43,7 @@ public class Task2 {
         System.out.println("bubble = " + list);
     }
 
-    public synchronized static void sortInsertion(List<Integer> list) {
+    public static void sortInsertion(List<Integer> list) {
         int j;
         for (int i = 0; i < list.size(); i++) {
             int swap = list.get(i);
@@ -55,7 +55,7 @@ public class Task2 {
         System.out.println("insertion = " + list);
     }
 
-    public synchronized static void sortSelection(List<Integer> list) {
+    public static void sortSelection(List<Integer> list) {
         for (int i = 0; i < list.size(); i++) {
             int pos = i;
             int min = list.get(i);
